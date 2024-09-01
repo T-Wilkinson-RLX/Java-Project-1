@@ -1,6 +1,4 @@
 
-
-
 public class Demo {
     
     public static void main(String a[]) 
@@ -21,5 +19,10 @@ public class Demo {
         obj1.show();
         obj2.show();
 
+        Human man = new Human();
+        man.setAge(22);
+        man.setName("Millie");
+
+        System.out.println("My name is " + man.getName() + " and my age is " + man.getAge());
     }
 }
