@@ -1,26 +1,35 @@
+
+class Mobile{
+
+    String brand;
+    int cost;
+    static String name;
+
+    public void show(){
+
+        System.out.println(brand + " : " + cost + " : " + name);
+    }
+
+}
+
+
 public class Demo {
     
     public static void main(String a[]) 
     {
-        int nums[][] = new int[5][4];
+      
+        Mobile obj1 = new Mobile();
+        obj1.brand = "Samsung";
+        obj1.cost = 200;
+        obj1.name = "SmartPhone";
 
+        Mobile obj2 = new Mobile();
+        obj2.brand = "Apple";
+        obj2.cost = 150;
+        obj2.name = "SmartPhone";
 
+        obj1.show();
+        obj2.show();
 
-        for(int i=0;i<5;i++){
-
-            for(int j=0;j<4;j++){
-                nums[i][j] = (int)(Math.random() * 50);
-
-            }
-            
-        }
-        for(int i=0;i<5;i++){
-
-            for(int j=0;j<4;j++){
-                System.out.print(nums[i][j] +" ");
-
-            }
-            System.out.println();
-        }
     }
 }
