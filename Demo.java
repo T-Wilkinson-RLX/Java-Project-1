@@ -1,18 +1,4 @@
 
-class Mobile{
-
-    String brand;
-    int cost;
-    static String name;
-
-    public void show(){
-
-        System.out.println(brand + " : " + cost + " : " + name);
-    }
-
-}
-
-
 public class Demo {
     
     public static void main(String a[]) 
@@ -33,5 +19,10 @@ public class Demo {
         obj1.show();
         obj2.show();
 
+        Human man = new Human();
+        man.setAge(22);
+        man.setName("Millie");
+
+        System.out.println("My name is " + man.getName() + " and my age is " + man.getAge());
     }
 }
